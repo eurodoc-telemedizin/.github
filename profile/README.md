@@ -1,4 +1,4 @@
-MedlibreGPT
+# MedlibreGPT
 We combine PrivateGPT with Nextcloud for secure medical data management.
 ## AI-Twin Chatbot
 AI-Twin chatbots are custom-made to reflect the knowledge and experience of individual physicians, enhancing the virtual consultation experience.
