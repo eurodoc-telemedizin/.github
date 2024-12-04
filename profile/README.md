@@ -4,6 +4,111 @@ https://communityhub.tec-connect.at/participations/442979
 Virtual Patient AI evolves from the first clinically tested augmented reality image
 guided surgery system (Medical University Vienna), transforming traditional teleconsultation into AI-powered patient care. The system utilizes MedlibreGPT (derived from PrivateGPT) to seamlessly integrate both cloud-based (OpenAI, Mistral) and locally-hosted LLMs with RAG-enhanced medical literature access.
 
+
+# Virtual Patient AI
+
+Medical AI platform evolving from clinically-tested AR surgery systems into AI-powered patient care. Built on MedlibreGPT technology with secure local and cloud LLM integration.
+
+[Community Hub Project Link](https://communityhub.tec-connect.at/participations/442979)
+
+## Core Components
+
+### MedlibreGPT Engine
+- Built on PrivateGPT foundation
+- Integrated with Nextcloud for secure data management
+- Hybrid model supporting both cloud (OpenAI, Mistral) and local LLM deployment
+- RAG-enhanced medical literature processing
+
+### AI-Twin Technology
+- Physician-specific knowledge modeling
+- Custom chatbot creation based on individual medical expertise
+- Enhanced virtual consultation capabilities
+
+### Security & Privacy
+- On-premises Nextcloud storage
+- Local LLM operation capability
+- Domain-specific medical processing
+- Network-independent operation option
+
+## System Architecture
+
+```mermaid
+graph TD
+    A[Interaction Layer] --> B[Patient Layer]
+    B --> C[Solutions Layer]
+    C --> D[AI Layer]
+    D --> E[Data Layer]
+    
+    subgraph Security
+    E --- F[Nextcloud]
+    F --- G[PostgreSQL]
+    end
+    
+    subgraph AI Processing
+    D --- H[Local LLM]
+    D --- I[Cloud LLM]
+    D --- J[RAG Engine]
+    end
+```
+
+### 1. Interaction Layer
+- Email/SMS communication
+- QR + PIN authentication
+- Encrypted data transmission
+- Activity logging
+
+### 2. Patient Layer
+- Medlibre Copilot web widget
+- Real-time assessment tools
+- Structured data collection
+- Natural language interface
+
+### 3. Solutions Layer
+- Nextcloud prompt management
+- Dynamic AI response system
+- Clinical protocol integration
+
+### 4. AI Layer
+- Local Mistral deployment
+- GPT-4 cloud integration
+- Medical literature RAG
+- Parallel query processing
+
+### 5. Data Layer
+- PostgreSQL + Nextcloud integration
+- HIPAA-compliant storage
+- Flexible deployment options
+
+## Technical Requirements
+
+- Docker + Docker Compose
+- PostgreSQL 13+
+- Python 3.9+
+- Node.js 16+
+- Nextcloud server
+- Optional: GPU for local LLM
+
+## Quick Start Guide
+
+```bash
+git clone https://github.com/virtualpatient/virtualpatient-ai
+cd virtualpatient-ai
+docker-compose up -d
+```
+
+Detailed setup instructions in [docs/setup.md](docs/setup.md)
+
+## Documentation
+
+- [Setup Guide](docs/setup.md)
+- [API Reference](docs/api.md)
+- [Security Overview](docs/security.md)
+
+## License
+
+Apache License 2.0
+
+
 ## System Architecture
 
 ### 1. Interaction Layer
