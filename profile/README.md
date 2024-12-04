@@ -1,3 +1,6 @@
+# Virtual Patient AI
+https://communityhub.tec-connect.at/participations/442979
+
 # MedlibreGPT
 We combine PrivateGPT with Nextcloud for secure medical data management.
 ## AI-Twin Chatbot
