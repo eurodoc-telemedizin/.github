@@ -2,6 +2,7 @@
 
 Medical AI platform evolving from clinically-tested AR surgery systems into AI-powered patient care. Built on MedlibreGPT technology with secure local and cloud LLM integration.
 
+# Austrian Research Promotion Agency (FFG)
 [Community Hub Project Link](https://communityhub.tec-connect.at/participations/442979)
 
 ## Core Components
