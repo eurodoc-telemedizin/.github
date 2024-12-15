@@ -5,6 +5,8 @@ Medical AI platform evolving from clinically-tested AR surgery systems into AI-p
 # Austrian Research Promotion Agency (FFG)
 # [Community Hub Project Link](https://communityhub.tec-connect.at/participations/442979)
 
+The Virtual Patient AI System comprises a suite of integrated technologies designed to deliver comprehensive healthcare solutions. It augments clinical decision-making while preserving practitioner autonomy and patient privacy. Central to this system is the Virtual Patient BRAIN integrating the patients medical history, powered by the on-premises MISTRAL LLM model, ensuring enhanced control and security. Clinical guidelines are seamlessly incorporated through Retrieval-Augmented Generation (RAG) via locally-hosted MedlibreGPT, our specialized adaptation of PrivateGPT. Online patient consultations are facilitated by AI-Twin Chatbots, which accurately emulate healthcare practitioners' expertise.
+
 ## Core Components
 
 ### MedlibreGPT Engine
