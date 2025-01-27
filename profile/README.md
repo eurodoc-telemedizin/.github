@@ -11,7 +11,7 @@ AlignGuard, the first practical application of the Virtual Patient AI Ecosystem,
 AlignGuard 是虚拟患者人工智能生态系统的首个实际应用，它通过人工智能驱动的精准度彻底改变了正畸和种植治疗。MedlibreGPT是PrivateGPT的开源分叉，集成了DeepSeekR1作为LLM。这一端到端解决方案将实时症状评估、三维治疗模拟和依从性监测（23 小时佩戴矫治器）与跨学科专业技术相结合，实现了美学与功能的平衡。它基于安全的五层开源架构--符合 GDPR/HIPAA 的数据处理和混合人工智能（MedlibreGPT）--可无缝集成到临床工作流程中。
 
 
-The Virtual Patient AI System comprises a suite of integrated technologies designed to deliver comprehensive healthcare solutions. It augments clinical decision-making while preserving practitioner autonomy and patient privacy. Central to this system is the Virtual Patient BRAIN integrating the patients medical history, powered by the on-premises MISTRAL LLM model, ensuring enhanced control and security. Clinical guidelines are seamlessly incorporated through Retrieval-Augmented Generation (RAG) via locally-hosted MedlibreGPT, our specialized adaptation of PrivateGPT. Online patient consultations are facilitated by AI-Twin Chatbots, which accurately emulate healthcare practitioners' expertise.
+The Virtual Patient AI System comprises a suite of integrated technologies designed to deliver comprehensive healthcare solutions. It augments clinical decision-making while preserving practitioner autonomy and patient privacy. Central to this system is the Virtual Patient BRAIN integrating the patients medical history, powered by the on-premises LLM model, ensuring enhanced control and security. Clinical guidelines are seamlessly incorporated through Retrieval-Augmented Generation (RAG) via locally-hosted MedlibreGPT, our specialized adaptation of PrivateGPT. Online patient consultations are facilitated by AI-Twin Chatbots, which accurately emulate healthcare practitioners' expertise.
 
 ## Core Components
 
