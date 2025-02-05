@@ -46,7 +46,7 @@ The Virtual Patient AI System comprises a suite of integrated technologies desig
 - Clinical protocol integration
 
 ### 4. AI Layer
-- Local Mistral deployment
+- Local LLM deployment
 - GPT-4 cloud integration
 - Medical literature RAG
 - Parallel query processing
