@@ -17,6 +17,10 @@ Eurodoc develops the Virtual Patient System AI, building on our pioneering work 
 
 In 1996, Dr. Michael Truppe published a [groundbreaking paper on augmented reality surgery](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/2395/1/Interventional-video-tomography/10.1117/12.209096.short) and see-through head-mounted displays—laying the foundation for modern surgical applications of HMDs like the Apple Vision Pro.
 
+## Wayback Archive
+Artma Virtual Patient® system Augmented Reality Image Guided Stereotactic Navigation in the year 1997
+http://artma.com/
+
 ## Contact
 
 EURODOC Telemedizin Forschungsgesellschaft mbH
