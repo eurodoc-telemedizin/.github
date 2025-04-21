@@ -1,69 +1,21 @@
 # Virtual Patient AI
+Transforming healthcare through AI-powered virtual consultations - where clinical expertise meets secure, scalable telemedicine for better patient outcomes.
 
-Medical AI platform evolving from clinically-tested AR surgery systems into AI-powered patient care. Built on MedlibreGPT technology with secure local and cloud LLM integration.
+Virtual Patient AI is an open-source healthcare platform transforming clinical decision-making, telemedicine, and medical training.
 
-# Austrian Research Promotion Agency (FFG)
-# [Community Hub Project Link](https://communityhub.tec-connect.at/participations/442979)
+- **Clinical Foundation Model:** Built on MedlibreGPT, the system integrates individual medical histories and clinical guidelines, enhancing decision support while preserving doctor autonomy and patient privacy.
+- **AI-Twin Chatbots:** Enables realistic, scalable online consultations and virtual patient interactions for both healthcare delivery and education.
+- **Robust Architecture:** Combines on-premises and cloud-based language models, secure Nextcloud integration, and hybrid EHR solutions—ensuring interoperability and cost efficiency.
+- **Unmatched Security & Privacy:** All data is processed and stored locally, with offline capability and blockchain timestamping for tamper-proof, court-admissible medical records.
+- **Proven Impact:** Already improving outcomes in dental and plastic surgery care, with transparent, verifiable records that meet GDPR/HIPAA standards.
 
-The Virtual Patient AI System comprises a suite of integrated technologies designed to deliver comprehensive healthcare solutions. It augments clinical decision-making while preserving practitioner autonomy and patient privacy. Central to this system is the Virtual Patient BRAIN integrating the patients medical history, powered by the on-premises LLM model, ensuring enhanced control and security. Clinical guidelines are seamlessly incorporated through Retrieval-Augmented Generation (RAG) via locally-hosted MedlibreGPT, our specialized adaptation of PrivateGPT. Online patient consultations are facilitated by AI-Twin Chatbots, which accurately emulate healthcare practitioners' expertise.
+Virtual Patient AI is setting a new standard for trustworthy, scalable, and privacy-first telemedicine and medical education—addressing urgent market needs and positioning itself as the backbone for next-generation healthcare platforms.
 
-## Core Components
+## Eurodoc Telemedizin Forschungsgesellschaft mbH
 
-### MedlibreGPT Engine
-- Built on PrivateGPT foundation
-- Integrated with Nextcloud for secure data management
-- Hybrid model supporting both cloud (OpenAI, Mistral) and local LLM deployment
-- RAG-enhanced medical literature processing
+Eurodoc develops the Virtual Patient System AI, building on our pioneering work in Augmented Reality image-guided surgery and teleconsultation from the 1990s. At the Medical University Vienna, we achieved the first clinical implementation of Augmented Reality Image Guided Surgery. We [**patented**](https://patents.google.com/patent/US5823958A/en?oq=US5823958A) the [**see-through display technology**](https://consultation.medlibre.ai/wvn) and published clinical results. The system utilized a see-through HMD featuring a camera for surgical site recording and a 3D sensor for head movement tracking. We also [patented](https://patents.google.com/patent/US5678546A/en?oq=US5678546A) the calibration process for aligning augmented reality overlays with real-world vision. The Virtual Patient System has received CE clearance as a Class IIa device and accumulated more than 2,800 [**international references**](https://scholar.google.at/citations?hl=de&user=ABDceFgAAAAJ). The Virtual Patient AI concept emerges from our extensive teleconsultation research.
 
-### AI-Twin Technology
-- Physician-specific knowledge modeling
-- Custom chatbot creation based on individual medical expertise
-- Enhanced virtual consultation capabilities
-
-### Security & Privacy
-- On-premises Nextcloud storage
-- Local LLM operation capability
-- Domain-specific medical processing
-- Network-independent operation option
-
-## System Architecture
-
-### 1. Interaction Layer
-- Email/SMS communication
-- QR + PIN authentication
-- Encrypted data transmission
-- Activity logging
-
-### 2. Patient Layer
-- Medlibre Copilot web widget
-- Real-time assessment tools
-- Structured data collection
-- Natural language interface
-
-### 3. Solutions Layer
-- Nextcloud prompt management
-- Dynamic AI response system
-- Clinical protocol integration
-
-### 4. AI Layer
-- Local LLM deployment
-- GPT-4 cloud integration
-- Medical literature RAG
-- Parallel query processing
-
-### 5. Data Layer
-- PostgreSQL + Nextcloud integration
-- HIPAA-compliant storage
-- Flexible deployment options
-
-## Technical Requirements
-
-- Docker + Docker Compose
-- PostgreSQL 13+
-- Python 3.9+
-- Node.js 16+
-- Nextcloud server
-- Optional: GPU for local LLM
+In 1996, Dr. Michael Truppe published a [groundbreaking paper on augmented reality surgery](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/2395/1/Interventional-video-tomography/10.1117/12.209096.short) and see-through head-mounted displays—laying the foundation for modern surgical applications of HMDs like the Apple Vision Pro.
 
 ## Contact
 
