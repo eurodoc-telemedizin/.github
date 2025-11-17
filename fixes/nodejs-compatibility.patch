@@ -1,0 +1,129 @@
+From 5bd9bc0204acec30ef97faac3b6c4f98cdd0db10 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 17 Nov 2025 08:29:49 +0000
+Subject: [PATCH] Fix Node.js 20+ compatibility issue with http_parser
+
+The umi build system fails on Node.js 20+ due to http-deceiver package
+using deprecated process.binding('http_parser') API that was removed.
+
+Changes:
+- Upgrade umi from 4.0.90 to 4.5.3 for better compatibility
+- Upgrade @umijs/lint and @umijs/plugins to 4.4.0
+- Add .nvmrc files specifying Node.js 18.20.4
+- Update engines field to restrict Node.js version to <20
+- Add Node.js version prerequisites to documentation
+
+This resolves the "No such module: http_parser" error when running
+npm install or npm run build with Node.js 20+.
+---
+ .nvmrc                                     |  1 +
+ docs/develop/launch_ragflow_from_source.md |  8 ++++++++
+ web/.nvmrc                                 |  1 +
+ web/README.md                              | 10 ++++++++++
+ web/package.json                           |  8 ++++----
+ 5 files changed, 24 insertions(+), 4 deletions(-)
+ create mode 100644 .nvmrc
+ create mode 100644 web/.nvmrc
+
+diff --git a/.nvmrc b/.nvmrc
+new file mode 100644
+index 0000000..17719ce
+--- /dev/null
++++ b/.nvmrc
+@@ -0,0 +1 @@
++18.20.4
+diff --git a/docs/develop/launch_ragflow_from_source.md b/docs/develop/launch_ragflow_from_source.md
+index c97c46a..dad64a8 100644
+--- a/docs/develop/launch_ragflow_from_source.md
++++ b/docs/develop/launch_ragflow_from_source.md
+@@ -17,11 +17,17 @@ Developers who have added new features or modified existing code and wish to deb
+ - RAM &ge; 16 GB
+ - Disk &ge; 50 GB
+ - Docker &ge; 24.0.0 & Docker Compose &ge; v2.26.1
++- **Node.js 18.x LTS** (18.20.4 recommended) for frontend development
++  - **Important:** Node.js 20+ is NOT supported due to compatibility issues with the `http-deceiver` package used by umi
+ 
+ :::tip NOTE
+ If you have not installed Docker on your local machine (Windows, Mac, or Linux), see the [Install Docker Engine](https://docs.docker.com/engine/install/) guide.
+ :::
+ 
++:::tip NODE.JS VERSION
++Use `nvm` (Node Version Manager) to easily switch between Node.js versions. An `.nvmrc` file is provided in the repository root and `web/` directory to automatically select the correct version.
++:::
++
+ ## Launch a service from source
+ 
+ To launch a RAGFlow service from source code:
+@@ -105,6 +111,8 @@ docker compose -f docker/docker-compose-base.yml up -d
+ 
+    ```bash
+    cd web
++   # Ensure you're using Node.js 18.x (nvm use 18 if using nvm)
++   node --version  # Should show v18.x.x
+    npm install
+    ```
+ 
+diff --git a/web/.nvmrc b/web/.nvmrc
+new file mode 100644
+index 0000000..17719ce
+--- /dev/null
++++ b/web/.nvmrc
+@@ -0,0 +1 @@
++18.20.4
+diff --git a/web/README.md b/web/README.md
+index edf78d1..cd47a8f 100644
+--- a/web/README.md
++++ b/web/README.md
+@@ -1,6 +1,16 @@
++## Prerequisites
++
++- **Node.js 18.x LTS** (18.20.4 recommended)
++  - **Important:** Node.js 20+ is NOT supported due to compatibility issues with build dependencies
++  - Use `nvm` to manage Node.js versions: `nvm use 18` or `nvm install 18.20.4`
++  - An `.nvmrc` file is provided for automatic version selection
++
+ ## Install front-end dependencies
+ 
+    ```bash
++   # Verify Node.js version first
++   node --version  # Should show v18.x.x
++
+    npm install
+    ```
+ 
+diff --git a/web/package.json b/web/package.json
+index acd309a..99326a9 100644
+--- a/web/package.json
++++ b/web/package.json
+@@ -110,7 +110,7 @@
+     "tailwind-merge": "^2.5.4",
+     "tailwind-scrollbar": "^3.1.0",
+     "tailwindcss-animate": "^1.0.7",
+-    "umi": "^4.0.90",
++    "umi": "^4.5.3",
+     "umi-request": "^1.4.0",
+     "unist-util-visit-parents": "^6.0.1",
+     "uuid": "^9.0.1",
+@@ -139,8 +139,8 @@
+     "@types/testing-library__jest-dom": "^6.0.0",
+     "@types/uuid": "^9.0.8",
+     "@types/webpack-env": "^1.18.4",
+-    "@umijs/lint": "^4.1.1",
+-    "@umijs/plugins": "^4.1.0",
++    "@umijs/lint": "^4.4.0",
++    "@umijs/plugins": "^4.4.0",
+     "@welldone-software/why-did-you-render": "^8.0.3",
+     "autoprefixer": "^10.4.21",
+     "cross-env": "^7.0.3",
+@@ -167,7 +167,7 @@
+     "umi-plugin-icons": "^0.1.1"
+   },
+   "engines": {
+-    "node": ">=18.20.4"
++    "node": ">=18.20.4 <20"
+   },
+   "overrides": {
+     "@radix-ui/react-dismissable-layer": "1.1.4"
+-- 
+2.43.0
+
