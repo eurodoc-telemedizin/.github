@@ -24,7 +24,7 @@ http://artma.com/
 
 ## Conference Materials
 
-- [EACMFS 2026, Athens — “From ChatGPT to Sovereign AI”](https://github.com/eurodoc-telemedizin/aidoc/tree/main/conferences/2026-eacmfs-athens): summary of the presentation at the 28th EACMFS Congress (15–18 September 2026) and the POSTOP CLEFT A0 poster “Caregiver-Reported Remote Monitoring After Infant Cleft Lip Repair With a Locally Hosted AI Triage System at LUTH, Lagos, Nigeria” (ÖGZMK 50. Jubiläumskongress 2026, Hofburg Wien).
+- [EACMFS 2026, Athens — “From ChatGPT to Sovereign AI”](https://github.com/eurodoc-telemedizin/aidoc/tree/main/conferences/2026-eacmfs-athens): summary of the presentation at the 28th EACMFS Congress (15–18 September 2026) and the POSTOP CLEFT A0 poster “Caregiver-Reported Remote Monitoring After Infant Cleft Lip Repair With a Locally Hosted AI Triage System at LUTH, Lagos, Nigeria” (ÖGZMK 50. Jubiläumskongress 2026, Hofburg Wien). Citable snapshot: [Release `eacmfs-2026`](https://github.com/eurodoc-telemedizin/aidoc/releases/tag/eacmfs-2026).
 
 ## Contact
 
